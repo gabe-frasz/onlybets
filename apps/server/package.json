@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "main": "dist/server",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "build": "tsc ./src/server.ts",
+    "seed": "tsx ./src/libs/prisma/seed.ts"
+  },
+  "author": "Gabriel VS Frasão <gabrielvitor.frasao@gmail.com>",
+  "license": "MIT",
+  "prisma": {
+    "seed": "tsx ./src/libs/prisma/seed.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@fastify/jwt": "^6.5.0",
+    "@prisma/client": "^4.7.1",
+    "fastify": "^4.10.2",
+    "short-unique-id": "^4.4.4",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.2.2",
+    "@types/node": "^18.11.17",
+    "prisma": "^4.7.1",
+    "prisma-erd-generator": "^1.2.4",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4"
+  }
+}
