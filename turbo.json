@@ -1,6 +1,14 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["APP_ORIGIN_URL", "JWT_SECRET"],
+  "globalEnv": [
+    "PORT",
+    "APP_ORIGIN_URL",
+    "JWT_SECRET",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+    "GITHUB_CLIENT_ID",
+    "GITHUB_SECRET"
+  ],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
