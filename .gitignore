@@ -5,34 +5,81 @@ node_modules
 .pnp
 .pnp.js
 
-# testing
-coverage
-
-# next.js
+# compiled output
 .next/
 out/
-build
-next-env.d.ts
+build/
+dist/
+dist-ssr
+web-build/
+storybook-static/
 
-# misc
-.DS_Store
-*.pem
+# tests
+coverage/
+cypress/screenshots
+cypress/videos
+.nyc_output
 
-# debug
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+lerna-debug.log*
 
-# local env files
-.env
-.env*.local
+# local files
+.env*
+!.env*.example
 
-# vercel
-.vercel
+# local DBs
+*.db
+*.sqlite
+*.sqlite-journal
+
+# local directories
+.turbo/
+.vercel/
+.expo/
+.astro/
+.solid/
 
 # typescript
 *.tsbuildinfo
+next-env.d.ts
 
-# turbo
-.turbo
+# service workers
+sw.js*
+worker*.js*
+workbox*.js*
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# others IDEs and editors
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# misc
+.DS_Store
+*.pem
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+Thumbs.db

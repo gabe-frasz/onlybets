@@ -1,0 +1,16 @@
+{
+  "display": "SolidJS",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsxImportSource": "solid-js",
+    "jsx": "preserve",
+    "types": ["solid-start/env"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
